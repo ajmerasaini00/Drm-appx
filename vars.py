@@ -6,18 +6,20 @@ API_ID = int(os.environ.get("API_ID", "26331872"))
 API_HASH = os.environ.get("API_HASH", "c93589620441707c37c5683a02eea54e")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
-CREDIT = os.environ.get("CREDIT","Astronaut Official")
+CREDIT = os.environ.get("CREDIT", "Astronaut Official")
+
 # MongoDB Configuration
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "Astronaut")
 DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://ajmerasaini01:U1sGiZRI6Ha0xuCy@cluster0.tnok3d0.mongodb.net/")
-MONGO_URL = DATABASE_URL  # F
-or auth system
+MONGO_URL = DATABASE_URL  # For auth system
+
 # Owner and Admin Configuration
 OWNER_ID = int(os.environ.get("OWNER_ID", "8355707251"))
 ADMINS = [int(x) for x in os.environ.get("ADMINS", "8355707251").split()]  # Default to owner ID
 
 # Channel Configuration
 PREMIUM_CHANNEL = "https://t.me/+W-Q51EuLf2QwYTl"
+
 # Thumbnail Configuration
 THUMBNAILS = list(map(str, os.environ.get("THUMBNAILS", "https://i.fbcd.co/products/original/ug-logo-designs-2-acbfbf7b80e16df4c902a34d1caf148e7e1feca736e21075114990e62294f3ac.jpg").split()))
 
@@ -31,7 +33,9 @@ AUTH_MESSAGES = {
     "subscription_active": """<b>🎉 Subscription Activated!</b>
 
 <blockquote>Your subscription has been activated and will expire on {expiry_date}.
-You can now use the bot!</blockquote>\n\n Type /start to start uploading """,
+You can now use the bot!</blockquote>
+
+ Type /start to start uploading """,
 
     "subscription_expired": """<b>⚠️ Your Subscription Has Ended</b>
 
@@ -54,10 +58,8 @@ Please contact the admin to renew your subscription.</blockquote>""",
 Please contact the admin @ItsUGBot to get access.</blockquote>""",
 
     "not_admin": "⚠️ You are not authorized to use this command!",
-    
+
     "invalid_format": """❌ <b>Invalid Format!</b>
 
 <blockquote>Use format: {format}</blockquote>"""
 }
-
-

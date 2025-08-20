@@ -2,19 +2,19 @@ import os
 from os import environ
 
 # API Configuration
-API_ID = int(os.environ.get("API_ID", "25693368"))
-API_HASH = os.environ.get("API_HASH", "2dcf91b0f99c0b9d4875e87020e6bd07")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "7715035021:AAGABcpL1tXtOdMBnMnXbujBVpbuttFKbxU")
+API_ID = int(os.environ.get("API_ID", "26331872"))
+API_HASH = os.environ.get("API_HASH", "c93589620441707c37c5683a02eea54e")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
 CREDIT = os.environ.get("CREDIT","Astronaut Official")
 # MongoDB Configuration
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "Astronaut")
-DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://botexe:botexe@cluster0.pqc0ykw.mongodb.net/")
-MONGO_URL = DATABASE_URL  # For auth system
-
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://ajmerasaini01:U1sGiZRI6Ha0xuCy@cluster0.tnok3d0.mongodb.net/")
+MONGO_URL = DATABASE_URL  # F
+or auth system
 # Owner and Admin Configuration
-OWNER_ID = int(os.environ.get("OWNER_ID", "5927517339"))
-ADMINS = [int(x) for x in os.environ.get("ADMINS", "5927517339").split()]  # Default to owner ID
+OWNER_ID = int(os.environ.get("OWNER_ID", "8355707251"))
+ADMINS = [int(x) for x in os.environ.get("ADMINS", "8355707251").split()]  # Default to owner ID
 
 # Channel Configuration
 PREMIUM_CHANNEL = "https://t.me/+W-Q51EuLf2QwYTl"
@@ -59,4 +59,5 @@ Please contact the admin @ItsUGBot to get access.</blockquote>""",
 
 <blockquote>Use format: {format}</blockquote>"""
 }
+
 
